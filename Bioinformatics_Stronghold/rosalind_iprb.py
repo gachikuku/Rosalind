@@ -1,3 +1,7 @@
+#Return: The probability that two randomly selected mating organisms will produce an individual possessing a dominant allele (and thus displaying the dominant phenotype). Assume that any two organisms can mate.
+
+
+
 def Pr_d(k: int, m: int, n: int) -> float:
     
     N = k + m + n
