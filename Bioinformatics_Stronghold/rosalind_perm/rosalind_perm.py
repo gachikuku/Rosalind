@@ -22,7 +22,8 @@ def permute(n: int) -> list:
     
             for i in range(len(perm)+1):
       
-                new_perms.append(perm[:i]+[n]
+                new_perms.append(perm[:i]
+                                +[n]
                                 +perm[i:])
         
                 result_perms = new_perms
