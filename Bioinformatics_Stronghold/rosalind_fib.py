@@ -14,7 +14,7 @@ class Memoize:
         return self.memo[args]
 
 
-
+@Memoize
 def rab(n: int, k: int) -> int:
     
     if n == 1 or n == 2: return 1
@@ -23,8 +23,5 @@ def rab(n: int, k: int) -> int:
     
         return rab(n-1, k) + rab(n-2, k) * k
 
-
-    
-rab = Memoize(rab)
 
 print(rab(31,4))
